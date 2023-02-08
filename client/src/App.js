@@ -11,9 +11,10 @@ import EditProfile from './components/profile-forms/EditProfile';
 import AddExperience from './components/profile-forms/AddExperience';
 import AddEducation from './components/profile-forms/AddEducation';
 import Profiles from './components/profiles/Profiles';
+import Profile from './components/profile/Profile';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
-import Profile from './components/profile/Profile';
+import NotFound from './components/layout/NotFound';
 import PrivateRoute from './components/routing/PrivateRoute';
 // Redux
 import { Provider } from 'react-redux';
@@ -82,6 +83,7 @@ const App = () => {
                 path='/posts/:id'
                 element={<PrivateRoute component={Post} />}
               />
+              <Route exact path='/test' element={<NotFound />} />
             </Routes>
           </section>
         </Fragment>
