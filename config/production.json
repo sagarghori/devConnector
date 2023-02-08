@@ -1,0 +1,6 @@
+{
+     "mongoURI": "mongodb+srv://sagarghori:sagarghori@devconnector.d74ykxl.mongodb.net/?retryWrites=true&w=majority",
+     "jwtSecret": "mysecrettoken",
+     "githubClientId": "cd2fa20b07554aa51f05",
+     "githubSecret": "ef2871065f1f628b00657257272ce2b20aebae24"
+}

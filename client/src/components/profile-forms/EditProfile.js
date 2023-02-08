@@ -46,7 +46,7 @@ const EditProfile = ({
       youtube: loading || !profile.social ? '' : profile.social.youtube,
       instagram: loading || !profile.social ? '' : profile.social.instagram,
     });
-  }, [loading]);
+  }, [loading, getCurrentProfile]);
 
   const {
     company,
@@ -68,7 +68,7 @@ const EditProfile = ({
 
   const onSubmit = (e) => {
     e.preventDefault();
-    // console.log('called=====');
+    console.log('called=====');
     createProfile(formData, navigate, true);
   };
 
