@@ -83,7 +83,7 @@ const App = () => {
                 path='/posts/:id'
                 element={<PrivateRoute component={Post} />}
               />
-              <Route exact path='/test' element={<NotFound />} />
+              <Route exact path='/*' element={<NotFound />} />
             </Routes>
           </section>
         </Fragment>
